@@ -14,8 +14,9 @@ export default function App() {
       <Window
         title="Hello World"
         icon={smiley}
+        width={600}
       >
-        <p>hi one day there'll be something here</p>
+        <p>hi you're probably looking for <a href="https://zclipsedev.com/">zclipsedev.com</a></p>
       </Window>
     </div>
   );
