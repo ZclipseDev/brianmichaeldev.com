@@ -25,6 +25,7 @@ const Window: React.FC<Win98WindowProps> = ({
         boxShadow: "2px 2px #fff inset, -2px -2px #404040 inset",
         display: "flex",
         flexDirection: "column",
+        maxWidth: "80%"
       }}
     >
       {/* Title Bar */}
