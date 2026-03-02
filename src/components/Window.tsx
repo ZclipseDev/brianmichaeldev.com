@@ -1,13 +1,13 @@
 import React from "react";
 
-interface Win98WindowProps {
+interface WindowProps {
   title: string;
   icon?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   width?: string | number;
 }
 
-const Window: React.FC<Win98WindowProps> = ({
+const Window: React.FC<WindowProps> = ({
   title,
   icon,
   children,
@@ -20,7 +20,6 @@ const Window: React.FC<Win98WindowProps> = ({
         margin: "20px auto",
         border: "2px solid #808080",
         borderRadius: 4,
-        fontFamily: "Tahoma, sans-serif",
         background: "#c0c0c0",
         boxShadow: "2px 2px #fff inset, -2px -2px #404040 inset",
         display: "flex",
@@ -62,7 +61,6 @@ const Window: React.FC<Win98WindowProps> = ({
               marginLeft: 2,
               border: "2px solid #808080",
               background: "#c0c0c0",
-              cursor: "pointer",
               padding: 0,
             }}
           >
@@ -78,7 +76,6 @@ const Window: React.FC<Win98WindowProps> = ({
               marginLeft: 2,
               border: "2px solid #808080",
               background: "#c0c0c0",
-              cursor: "pointer",
               padding: 0,
             }}
           >
