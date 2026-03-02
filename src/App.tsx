@@ -13,12 +13,18 @@ import primisTitle from "./assets/primis.png"
 export default function App() {
   return (
     <div style={{ padding: 50 }}>
-      <img src={name} style={{
-        display: "block",
-        margin: "0 auto",
-        maxHeight: "100px",
-        maxWidth: "80%"
-      }}/>
+      <a href="/">
+        <img
+          src={name}
+          style={{
+            display: "block",
+            margin: "0 auto",
+            maxHeight: "100px",
+            maxWidth: "80%",
+            cursor: "pointer"
+          }}
+        />
+      </a>
       <Window
         title="Hello World"
         icon={smiley}
