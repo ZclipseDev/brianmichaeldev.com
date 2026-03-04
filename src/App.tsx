@@ -8,6 +8,7 @@ import carTitle from "./assets/ccgthtm6.png"
 import skyTitle from "./assets/skydie.jpg"
 import primisTitle from "./assets/primis.png"
 import message from "./assets/Message.png"
+import dinoLogo from "./assets/Dino-might-logo-transparent.png"
 
 export default function App() {
   return (
@@ -60,9 +61,20 @@ export default function App() {
         thumb={dinoTitle}
         children="Dino-Might is a local multiplayer free-for-all in which players jump atop other dinos in order to be the crowned the winner. I had the role of gameplay programmer, 
         and had a blast working with the team. I even had the opportunity to run a booth at several different conferences! Dino-Might was created in Unity."
-        expandedContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      >
+        expandedContent={
+          <img
+            src={dinoLogo}
+            style={{
+              maxWidth: "50%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              margin: "0 auto"
+            }}
+          />
+        }>
       </QuickGameWindow>
       {/* <QuickGameWindow
         t="Sky Die"
