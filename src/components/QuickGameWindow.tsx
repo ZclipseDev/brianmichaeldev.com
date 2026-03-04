@@ -1,5 +1,7 @@
 import Window from "./Window";
 import Button from "./Button";
+import glass from "../assets/Magnifying-Glass.png"
+import star from "../assets/Star.png"
 
 type QuickGameWindowProps = {
   t: string;
@@ -11,6 +13,7 @@ export function QuickGameWindow({ t, thumb, children }: QuickGameWindowProps) {
   return (
     <Window
         title={t}
+        icon={star}
         width={600}
     >
         <div
@@ -27,7 +30,7 @@ export function QuickGameWindow({ t, thumb, children }: QuickGameWindowProps) {
           <img
             src={thumb}
             style={{
-              maxWidth: "50%",
+              maxWidth: "200px",
               flex: "1 1 200px",
             }}
           />
@@ -46,6 +49,7 @@ export function QuickGameWindow({ t, thumb, children }: QuickGameWindowProps) {
           }}
         >
           <Button
+          icon={glass}
           >
             Learn More!
           </Button>

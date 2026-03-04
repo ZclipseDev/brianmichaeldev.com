@@ -7,6 +7,7 @@ import { QuickGameWindow } from "./components/QuickGameWindow";
 import carTitle from "./assets/ccgthtm6.png"
 import skyTitle from "./assets/skydie.jpg"
 import primisTitle from "./assets/primis.png"
+import message from "./assets/Message.png"
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       </a>
       <Window
         title="Hello World"
+        icon={message}
         width={600}
       >
         <div
@@ -44,7 +46,7 @@ export default function App() {
             }}
           />
         </div>
-        <p>Welcome to my website! I'm Brian, part-time game programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
+        <p>Welcome to my website! I'm Brian, part-time games programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
       </Window>
       <QuickGameWindow
         t="Car Car Goes to Hell: The Musical"
