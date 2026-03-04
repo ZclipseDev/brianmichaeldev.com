@@ -48,21 +48,23 @@ export default function App() {
         </div>
         <p>Welcome to my website! I'm Brian, part-time games programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
       </Window>
-      <QuickGameWindow
+      {/* <QuickGameWindow
         t="Car Car Goes to Hell: The Musical"
         thumb={carTitle}
       >
         What started as a joke quickly became a dream, and soon… a reality! This parody point-and-click adventure game begins development very soon and aims to blend 
         gameplay with musical elements in a seamless fashion. Serving as the director, writer, and lead programmer of the project, I can’t wait to enter the inferno.
-      </QuickGameWindow>
+      </QuickGameWindow> */}
       <QuickGameWindow
         t="Dino-Might"
         thumb={dinoTitle}
+        children="Dino-Might is a local multiplayer free-for-all in which players jump atop other dinos in order to be the crowned the winner. I had the role of gameplay programmer, 
+        and had a blast working with the team. I even had the opportunity to run a booth at several different conferences! Dino-Might was created in Unity."
+        expandedContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       >
-        Dino-Might is a local multiplayer free-for-all in which players jump atop other dinos in order to be the crowned the winner. I had the role of gameplay programmer, 
-        and had a blast working with the team. I even had the opportunity to run a booth at several different conferences! Dino-Might was created in Unity.
       </QuickGameWindow>
-      <QuickGameWindow
+      {/* <QuickGameWindow
         t="Sky Die"
         thumb={skyTitle}
       >
@@ -77,7 +79,7 @@ export default function App() {
         During my Freshman and Sophomore years, I was employed at Roberta’s Art Gallery in the University of Wisconsin-Whitewater campus. For each exhibit, we were 
         responsible for installing the art pieces. This included many measurements that would oftentimes result in confusion. As a result of this, I created a program 
         that did all the calculations for us, making work more efficient. Primis was created in Unity.
-      </QuickGameWindow>
+      </QuickGameWindow> */}
     </div>
   );
 }
