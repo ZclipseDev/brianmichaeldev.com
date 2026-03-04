@@ -1,7 +1,5 @@
 import Window from "./Window";
 import Button from "./Button";
-import info from "../assets/msg_information-0.png"
-import shutdown from "../assets/shut_down_with_computer-0.png"
 
 type QuickGameWindowProps = {
   t: string;
@@ -13,7 +11,6 @@ export function QuickGameWindow({ t, thumb, children }: QuickGameWindowProps) {
   return (
     <Window
         title={t}
-        icon={shutdown}
         width={600}
     >
         <div
@@ -49,7 +46,6 @@ export function QuickGameWindow({ t, thumb, children }: QuickGameWindowProps) {
           }}
         >
           <Button
-            icon={info}
           >
             Learn More!
           </Button>

@@ -30,7 +30,7 @@ const Window: React.FC<WindowProps> = ({
       {/* Title Bar */}
       <div
         style={{
-          background: "linear-gradient(to right, #000080, #1084d0)",
+          background: "linear-gradient(to right, #341539, #5A4AE3)",
           color: "#fff",
           fontWeight: "bold",
           padding: "4px 6px",

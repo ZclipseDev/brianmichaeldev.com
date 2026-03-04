@@ -1,9 +1,7 @@
 import name from "./assets/coolname.png";
 import Window from "./components/Window";
-import smiley from "./assets/utopia_smiley.png"
 import brian from "./assets/brian-portrait-ignite-retro.png"
 import "./index.css"
-import rainbow from "./assets/rainbow2.gif"
 import dinoTitle from "./assets/dino-might-title.png"
 import { QuickGameWindow } from "./components/QuickGameWindow";
 import carTitle from "./assets/ccgthtm6.png"
@@ -27,7 +25,6 @@ export default function App() {
       </a>
       <Window
         title="Hello World"
-        icon={smiley}
         width={600}
       >
         <div
@@ -46,7 +43,6 @@ export default function App() {
               maxWidth: "50%"
             }}
           />
-          <img src={rainbow} style={{maxWidth: "100%"}}/>
         </div>
         <p>Welcome to my website! I'm Brian, part-time game programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
       </Window>
