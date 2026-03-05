@@ -41,7 +41,6 @@ export function QuickGameWindow({ t, thumb, children, expandedContent }: QuickGa
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
-          textAlign: "center",
           margin: "0 auto",
           gap: "20px",
         }}

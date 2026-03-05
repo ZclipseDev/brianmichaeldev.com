@@ -9,6 +9,11 @@ import skyTitle from "./assets/skydie.jpg"
 import primisTitle from "./assets/primis.png"
 import message from "./assets/Message.png"
 import dinoLogo from "./assets/Dino-might-logo-transparent.png"
+import dinoScreenshot0 from "./assets/dinoscreenshot0.png"
+import ExpandedContent from "./components/ExpandedContent";
+import dinoMain from "./assets/dinokeyart.png"
+import dinoScreenshot1 from "./assets/dinoscreenshot1.png"
+import dinoMdev from "./assets/dinomdev.jpg"
 
 export default function App() {
   return (
@@ -49,32 +54,31 @@ export default function App() {
         </div>
         <p>Welcome to my website! I'm Brian, part-time games programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
       </Window>
-      {/* <QuickGameWindow
-        t="Car Car Goes to Hell: The Musical"
-        thumb={carTitle}
-      >
-        What started as a joke quickly became a dream, and soon… a reality! This parody point-and-click adventure game begins development very soon and aims to blend 
-        gameplay with musical elements in a seamless fashion. Serving as the director, writer, and lead programmer of the project, I can’t wait to enter the inferno.
-      </QuickGameWindow> */}
       <QuickGameWindow
         t="Dino-Might"
         thumb={dinoTitle}
-        children="Dino-Might is a local multiplayer free-for-all in which players jump atop other dinos in order to be the crowned the winner. I had the role of gameplay programmer, 
-        and had a blast working with the team. I even had the opportunity to run a booth at several different conferences! Dino-Might was created in Unity."
+        children="Dino-Might is a local multiplayer free-for-all in which players jump atop other dinos in order to be crowned the winner. I had the role of gameplay programmer, 
+        and had a blast working with the team. I even had the opportunity to run a booth at several different conferences!"
         expandedContent={
-          <img
-            src={dinoLogo}
-            style={{
-              maxWidth: "50%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "center",
-              margin: "0 auto"
-            }}
-          />
-        }>
+        <ExpandedContent
+          logo={dinoLogo}
+          introScreenshot={dinoMain}
+          introText="In this 2D party platformer, up to four players can become dinos in order to jump and defeat their foes in a Joust-like manner. Various powerups decorate each stage in order to give each player a fighting chance. I helped make this game with a couple of my friends, and it’s been so rewarding!"
+          cards={[
+            {
+              image: dinoScreenshot0,
+              text: "Dino-Might was the first big project that I joined mid-production. As such, not only did I have to adapt to the current codebase, but I also learned how to best utilize Unity Version Control. After getting the hang of things, I also aided in the large-scale refactor process of the game from game jam code.",
+            },
+            {
+              image: dinoScreenshot1,
+              text: "Specifically, I worked with the stats system pre-refactor. Various aspects of the game are recorded and revealed at the end of each match, all shown within a beautiful post-game stats screen. For the refactor, I did most of the work with the player controller, minimizing code from a billion lines to a number I can actually count to. Powerups were included in this process.",
+            },
+            {
+              image: dinoMdev,
+              text: "One of my favorite parts of game development is showing off what I’ve been working on, and Dino-Might had plenty of opportunities for that! We’ve got to showcase the game from locations ranging from coast to coast. Several conferences we’ve showcased at are GDC, PAX East, and M+DEV!",
+            },
+          ]}
+        />}>
       </QuickGameWindow>
       {/* <QuickGameWindow
         t="Sky Die"
