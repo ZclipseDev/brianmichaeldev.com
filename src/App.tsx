@@ -4,8 +4,7 @@ import brian from "./assets/brian-portrait-ignite-retro.png"
 import "./index.css"
 import dinoTitle from "./assets/dino-might-title.png"
 import { QuickGameWindow } from "./components/QuickGameWindow";
-import carTitle from "./assets/ccgthtm6.png"
-import skyTitle from "./assets/skydie.jpg"
+import skyTitle from "./assets/skytitle.png"
 import primisTitle from "./assets/primis.png"
 import message from "./assets/Message.png"
 import dinoLogo from "./assets/Dino-might-logo-transparent.png"
@@ -14,6 +13,10 @@ import ExpandedContent from "./components/ExpandedContent";
 import dinoMain from "./assets/dinokeyart.png"
 import dinoScreenshot1 from "./assets/dinoscreenshot1.png"
 import dinoMdev from "./assets/dinomdev.jpg"
+import skyLogo from "./assets/skylogo.png"
+import github from "./assets/github.png"
+import capstoneClass from "./assets/class.jpg"
+import skyScreenshot0 from "./assets/skyscreenshot0.jpg"
 
 export default function App() {
   return (
@@ -80,22 +83,31 @@ export default function App() {
           ]}
         />}>
       </QuickGameWindow>
-      {/* <QuickGameWindow
+      <QuickGameWindow
         t="Sky Die"
         thumb={skyTitle}
-      >
-        Sky Die is a local multiplayer brawl in which players dodge obstacles (and other players) while falling through the skies. This was created during my capstone game 
-        development class. I had the role of programming/project lead, organizing and leading class meetings, resolving GitHub merge conflicts, and providing the tape 
-        wherever it needed to be. Very proud of our Steam release! Sky Die was created in Unity.
+        children="Sky Die is a local multiplayer brawl in which players dodge obstacles (and other players) while falling through the skies. This was created during my capstone game development class. I had the role of programming/project lead, organizing and leading class meetings, resolving merge conflicts, and providing the tape wherever it needed to be. Very proud of our Steam release!"
+        expandedContent={
+        <ExpandedContent
+          logo={skyLogo}
+          introScreenshot="https://youtu.be/_YtDhcG0sfs?si=sfr0TpnNiekV3DIy"
+          introText="Tasked with creating a local multiplayer game, my capstone class bore the idea of Sky Die, in which players select from four playable characters, each with their own unique abilities. After selecting a stage, these characters are then dropped from the sky, aiming to charge and dash into each other to contact various hazards. The last one falling wins!"
+          cards={[
+            {
+              image: github,
+              text: "My primary role on Sky Die was the project manager. I utilized a GitHub project board to keep all tasks accounted for so no one could ask the dreaded “what am I supposed to be doing?” Additionally, all aspects were added to the board very early on and broken up into manageable chunks to be completed within the one semester we were given.",
+            },
+            {
+              image: capstoneClass,
+              text: "I relied very heavily on my team, and I respected their requests. One such request was having a designated “office hours” time, to which I obliged. Even outside of this time period, I would meet with students after class to help them with aspects they were stuck with. I even bought pizza for our first prototype!",
+            },
+            {
+              image: skyScreenshot0,
+              text: "Communicating with my fellow leads was a huge part of the project. I tried my best to be the slayer of scope-creep, even going as far as writing the majority of our twenty-page game design document. I would be amiss to say we agreed on everything, but the fact that we could talk through our thought processes and come to a conclusion and compromise are what really matter. I am happy to say that we were the second UWW capstone class to get our game onto Steam!",
+            },
+          ]}
+        />}>
       </QuickGameWindow>
-      <QuickGameWindow
-        t="Primis"
-        thumb={primisTitle}
-      >
-        During my Freshman and Sophomore years, I was employed at Roberta’s Art Gallery in the University of Wisconsin-Whitewater campus. For each exhibit, we were 
-        responsible for installing the art pieces. This included many measurements that would oftentimes result in confusion. As a result of this, I created a program 
-        that did all the calculations for us, making work more efficient. Primis was created in Unity.
-      </QuickGameWindow> */}
     </div>
   );
 }

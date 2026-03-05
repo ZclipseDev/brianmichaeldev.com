@@ -18,13 +18,19 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
   introText,
   cards,
 }) => {
+    const isYouTube = introScreenshot.includes("youtube.com") || introScreenshot.includes("youtu.be");
+    const getYouTubeEmbedUrl = (url: string) => {
+        const match = url.match(/(?:youtube\.com\/.*v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+        return match ? `https://www.youtube.com/embed/${match[1]}` : "";
+    };
+
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "20px", // outer gap
+        gap: "20px",
       }}
     >
       {/* Logo */}
@@ -38,7 +44,7 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
         }}
       />
 
-      {/* Screenshot + Intro */}
+      {/* Screenshot or Video and Intro */}
       <div
         style={{
           display: "flex",
@@ -49,17 +55,32 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
           width: "100%",
         }}
       >
-        <img
-          src={introScreenshot}
-          alt="Intro Screenshot"
-          style={{
-            flex: "1 1 350px",
-            maxWidth: "600px",
-            width: "100%",
-            height: "auto",
-            objectFit: "contain",
-          }}
-        />
+        {isYouTube ? (
+          <iframe
+            style={{
+              flex: "1 1 350px",
+              maxWidth: "600px",
+              width: "100%",
+              aspectRatio: "16/9",
+            }}
+            src={getYouTubeEmbedUrl(introScreenshot)}
+            title="Intro Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        ) : (
+          <img
+            src={introScreenshot}
+            alt="Intro Screenshot"
+            style={{
+              flex: "1 1 350px",
+              maxWidth: "600px",
+              width: "100%",
+              height: "auto",
+              objectFit: "contain",
+            }}
+          />
+        )}
 
         <p
           style={{
