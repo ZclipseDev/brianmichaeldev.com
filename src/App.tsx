@@ -17,6 +17,10 @@ import skyLogo from "./assets/skylogo.png"
 import github from "./assets/github.png"
 import capstoneClass from "./assets/class.jpg"
 import skyScreenshot0 from "./assets/skyscreenshot0.jpg"
+import primis0 from "./assets/primis0.jpg"
+import primis1 from "./assets/primis1.jpg"
+import primis2 from "./assets/primis2.jpg"
+import primis3 from "./assets/primis3.jpg"
 
 export default function App() {
   return (
@@ -104,6 +108,41 @@ export default function App() {
             {
               image: skyScreenshot0,
               text: "Communicating with my fellow leads was a huge part of the project. I tried my best to be the slayer of scope-creep, even going as far as writing the majority of our twenty-page game design document. I would be amiss to say we agreed on everything, but the fact that we could talk through our thought processes and come to a conclusion and compromise are what really matter. I am happy to say that we were the second UWW capstone class to get our game onto Steam!",
+            },
+          ]}
+        />}>
+      </QuickGameWindow>
+      <QuickGameWindow
+        t="Primis"
+        thumb={primisTitle}
+        children="During my Freshman and Sophomore years, I was employed at Roberta’s Art Gallery in the University of Wisconsin-Whitewater campus. For each exhibit, we were responsible for installing the art pieces. This included many measurements that would oftentimes result in miscalculations and confusion. As a result of this, I created a program that did all the calculations for us, making work more efficient."
+        expandedContent={
+        <ExpandedContent
+          introScreenshot={primis1}
+          introText="Primis is a tool created in Unity that aids users in calculating where to drill screws into walls to hang art. The program also has a visual component, meaning that users can envision what the wall would look like before hanging the art. Users input the height, width, and wire tautness (wire holding the art piece) measurements into the program, and it outputs exactly where each screw needs to be placed."
+          cards={[
+            {
+              image: primis2,
+              text: "My supervisor was a big advocate for encouraging my coworkers and I to try and utilize our areas of study as much as possible. After I pitched Primis, she was all aboard! I’m very glad to have been given the chance to put my studies into practice in the workplace.",
+            },
+            {
+              image: primis0,
+              text: "I was actually interviewed about Primis! It was an honor to have my program deemed important enough to warrant an official University of Wisconsin-Whitewater article. In it, I discussed my detection of a problem and my need to solve it. The article can be read here!",
+            },
+            {
+              image: primis3,
+              text: (
+              <>
+                I was actually interviewed about Primis! It was an honor to have my program deemed important enough to warrant an official University of Wisconsin-Whitewater article. In it, I discussed my detection of a problem and my need to solve it. {" "}
+                <a
+                  href="https://www.uww.edu/news/archive/2023-03-art-gallery-magd-major"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The article can be read here!
+                </a>
+                </>
+              ),
             },
           ]}
         />}>

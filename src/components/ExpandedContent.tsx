@@ -2,11 +2,11 @@ import React from "react";
 
 interface CardData {
   image: string;
-  text: string;
+  text: React.ReactNode;
 }
 
 interface ExpandedContentProps {
-  logo: string;
+  logo?: string;
   introScreenshot: string;
   introText: string;
   cards: CardData[];
@@ -33,16 +33,18 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
         gap: "20px",
       }}
     >
-      {/* Logo */}
-      <img
-        src={logo}
-        alt="Game Logo"
-        style={{
-          width: "500px",
-          maxWidth: "90%",
-          height: "auto",
-        }}
-      />
+    {/* Logo */}
+    {logo && (
+        <img
+            src={logo}
+            alt="Game Logo"
+            style={{
+            width: "500px",
+            maxWidth: "90%",
+            height: "auto",
+            }}
+        />
+    )}
 
       {/* Screenshot or Video and Intro */}
       <div
