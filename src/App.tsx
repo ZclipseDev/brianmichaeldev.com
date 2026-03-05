@@ -68,6 +68,7 @@ export default function App() {
         and had a blast working with the team. I even had the opportunity to run a booth at several different conferences!"
         expandedContent={
         <ExpandedContent
+          popup="https://store.steampowered.com/app/3613070/DinoMight/"
           logo={dinoLogo}
           introScreenshot={dinoMain}
           introText="In this 2D party platformer, up to four players can become dinos in order to jump and defeat their foes in a Joust-like manner. Various powerups decorate each stage in order to give each player a fighting chance. I helped make this game with a couple of my friends, and it’s been so rewarding!"
@@ -93,6 +94,7 @@ export default function App() {
         children="Sky Die is a local multiplayer brawl in which players dodge obstacles (and other players) while falling through the skies. This was created during my capstone game development class. I had the role of programming/project lead, organizing and leading class meetings, resolving merge conflicts, and providing the tape wherever it needed to be. Very proud of our Steam release!"
         expandedContent={
         <ExpandedContent
+          popup="https://store.steampowered.com/app/3715480/Sky_Die/"
           logo={skyLogo}
           introScreenshot="https://youtu.be/_YtDhcG0sfs?si=sfr0TpnNiekV3DIy"
           introText="Tasked with creating a local multiplayer game, my capstone class bore the idea of Sky Die, in which players select from four playable characters, each with their own unique abilities. After selecting a stage, these characters are then dropped from the sky, aiming to charge and dash into each other to contact various hazards. The last one falling wins!"
@@ -118,6 +120,7 @@ export default function App() {
         children="During my Freshman and Sophomore years, I was employed at Roberta’s Art Gallery in the University of Wisconsin-Whitewater campus. For each exhibit, we were responsible for installing the art pieces. This included many measurements that would oftentimes result in miscalculations and confusion. As a result of this, I created a program that did all the calculations for us, making work more efficient."
         expandedContent={
         <ExpandedContent
+          popup="https://www.uww.edu/news/archive/2023-03-art-gallery-magd-major"
           introScreenshot={primis1}
           introText="Primis is a tool created in Unity that aids users in calculating where to drill screws into walls to hang art. The program also has a visual component, meaning that users can envision what the wall would look like before hanging the art. Users input the height, width, and wire tautness (wire holding the art piece) measurements into the program, and it outputs exactly where each screw needs to be placed."
           cards={[

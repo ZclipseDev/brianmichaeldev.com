@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./Button";
+import dots from "../assets/Message-Three-Dots.png"
 
 interface CardData {
   image: string;
@@ -7,6 +9,7 @@ interface CardData {
 
 interface ExpandedContentProps {
   logo?: string;
+  popup: string;
   introScreenshot: string;
   introText: string;
   cards: CardData[];
@@ -14,6 +17,7 @@ interface ExpandedContentProps {
 
 const ExpandedContent: React.FC<ExpandedContentProps> = ({
   logo,
+  popup,
   introScreenshot,
   introText,
   cards,
@@ -84,15 +88,21 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
           />
         )}
 
-        <p
-          style={{
+        <div
+            style={{
             flex: "1 1 350px",
             maxWidth: "400px",
-            margin: 0,
-          }}
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+            }}
         >
-          {introText}
-        </p>
+            <p style={{ margin: 0 }}>{introText}</p>
+ 
+            <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
+                <Button onClick={() => window.open(popup, "_blank", "noopener,noreferrer")} icon={dots}>Check it out!</Button>
+            </div>
+        </div>
       </div>
 
       {/* Cards */}
