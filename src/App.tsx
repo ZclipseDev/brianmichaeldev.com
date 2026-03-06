@@ -14,13 +14,16 @@ import dinoMain from "./assets/dinokeyart.png"
 import dinoScreenshot1 from "./assets/dinoscreenshot1.png"
 import dinoMdev from "./assets/dinomdev.jpg"
 import skyLogo from "./assets/skylogo.png"
-import github from "./assets/github.png"
+import githubProject from "./assets/githubproject.png"
 import capstoneClass from "./assets/class.jpg"
 import skyScreenshot0 from "./assets/skyscreenshot0.jpg"
 import primis0 from "./assets/primis0.jpg"
 import primis1 from "./assets/primis1.jpg"
 import primis2 from "./assets/primis2.jpg"
 import primis3 from "./assets/primis3.jpg"
+import emailIcon from "./assets/email.png"
+import githubIcon from "./assets/github.png"
+import linkedinIcon from "./assets/linkedin.png"
 
 export default function App() {
   return (
@@ -32,8 +35,7 @@ export default function App() {
             display: "block",
             margin: "0 auto",
             maxHeight: "100px",
-            maxWidth: "80%",
-            cursor: "pointer"
+            maxWidth: "80%"
           }}
         />
       </a>
@@ -58,6 +60,37 @@ export default function App() {
               maxWidth: "50%"
             }}
           />
+        </div>
+        <div
+            style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            margin: "10px auto",
+            gap: "10px",
+            maxWidth: "30%"
+          }}
+        >
+          <a href="mailto:brianmic28@gmail.com">
+            <img
+              src={emailIcon}
+              style={{maxWidth: "80%"}}
+            />
+          </a>
+          <a href="https://github.com/ZclipseDev" target="_blank" rel="noopener noreferrer">
+            <img
+              src={githubIcon}
+              style={{maxWidth: "80%"}}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/brian-michael-dev/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={linkedinIcon}
+              style={{maxWidth: "80%"}}
+            />
+          </a>
         </div>
         <p>Welcome to my website! I'm Brian, part-time games programmer, full-time awesome. I can't wait to show you what I've been working on!!!</p>
       </Window>
@@ -100,7 +133,7 @@ export default function App() {
           introText="Tasked with creating a local multiplayer game, my capstone class bore the idea of Sky Die, in which players select from four playable characters, each with their own unique abilities. After selecting a stage, these characters are then dropped from the sky, aiming to charge and dash into each other to contact various hazards. The last one falling wins!"
           cards={[
             {
-              image: github,
+              image: githubProject,
               text: "My primary role on Sky Die was the project manager. I utilized a GitHub project board to keep all tasks accounted for so no one could ask the dreaded “what am I supposed to be doing?” Additionally, all aspects were added to the board very early on and broken up into manageable chunks to be completed within the one semester we were given.",
             },
             {
