@@ -163,10 +163,6 @@ export default function App() {
             },
             {
               image: primis0,
-              text: "I was actually interviewed about Primis! It was an honor to have my program deemed important enough to warrant an official University of Wisconsin-Whitewater article. In it, I discussed my detection of a problem and my need to solve it. The article can be read here!",
-            },
-            {
-              image: primis3,
               text: (
               <>
                 I was actually interviewed about Primis! It was an honor to have my program deemed important enough to warrant an official University of Wisconsin-Whitewater article. In it, I discussed my detection of a problem and my need to solve it. {" "}
@@ -179,6 +175,10 @@ export default function App() {
                 </a>
                 </>
               ),
+            },
+            {
+              image: primis3,
+              text: "To this day, Roberta’s Art Gallery still utilizes a variation of my tool. I’m so glad to be able to say that I left my mark on campus in a meaningful way! Whenever I’m in the neighborhood, I stop by in case any bugs have been unearthed. However, usually my track record is pretty clean. :)",
             },
           ]}
         />}>
